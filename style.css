@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
+
+:root {
+    --cor-primaria: #FF79C6;
+    --cor-secundaria: #BD93F9;
+    --cor-fundo: #282A36;
+    --cor-texto: #F8F8F2;
+    --cor-texto-secundario: #6272A4;
+    --cor-botao-hover: #44475A;
+    --cor-borda: #6272A4;
+    --cor-link: #8BE9FD;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: var(--cor-fundo);
+    overflow: hidden;
+    color: var(--cor-texto);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 45px;
+    margin-bottom: 3px;
+    margin-top: 40px;
+    color: var(--cor-primaria);
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 10px;   
+    color: var(--cor-secundaria);
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    color: var(--cor-primaria);
+}
+
+.section p {
+    font-size: 18px;
+    margin-top: 25px;
+    text-align: justify !important;
+    color: var(--cor-texto);
+}
+
+.contact {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact a {
+    color: var(--cor-link);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 24px;
+}
+
+.projects-container {
+    overflow-x: hidden;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    color: var(--cor-texto);
+}
+
+.projects-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 40px);
+    min-width: 300px;
+    max-width: calc(33.333% - 40px);
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    border: 1px solid var(--cor-borda);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s;
+}
+
+.project:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--cor-primaria);
+}
+
+.project-details p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify !important;
+    color: var(--cor-texto-secundario);
+}
+
+.nextui-button {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.nextui-button:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+.skills-container {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: var(--cor-texto);
+}
+
+.skills-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+}
+
+.skills-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    width: 150px;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    border: 1px solid var(--cor-borda);
+    transition: box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill i {
+    font-size: 30px;
+    color: var(--cor-primaria);
+}
+
+.skill p {
+    margin-top: 10px;
+}
+
+.soft-skill {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hard-skill {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#showSkillsBtn {
+    display: block;
+    margin: 20px auto;
+}
+
+.skills-mural {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.animate {
+    animation: zoom 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@media (max-width: 1024px) {
+    .project {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+
+    .project img {
+        height: 180px;
+    }
+
+    .header h1 {
+        font-size: 38px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .project {
+        flex: 1 1 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+
+    .project img {
+        height: 160px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .section p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project img {
+        height: 140px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header p {
+        font-size: 12px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .section p {
+        font-size: 12px;
+    }
+
+    .nextui-button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .contact a {
+        font-size: 20px;
+    }
+}
