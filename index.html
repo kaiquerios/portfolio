@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,155 +11,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
+    <header class="header">
+        <h1>Kaique Rios Novais</h1>
+        <p>Desenvolvedor Júnior - Python | Automação e Inteligência Artificial</p>
+        <button id="showSkillsBtn" class="btn">Veja minhas habilidades</button>
+    </header>
 
-        <div class="header">
-            <h1>Kaique Rios Novais</h1>
-            <p>Desenvolvedor Júnior - Python | Automação e Inteligência Artificial</p>
-            <button id="showSkillsBtn" class="nextui-button">Veja minhas habilidades</button>
-        </div>
+    <nav class="contact">
+        <a href="https://www.linkedin.com/in/kaiquerios/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:kaiquerios.dev@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+        <a href="https://github.com/kaiquerios" target="_blank"><i class="fab fa-github"></i></a>
+    </nav>
 
-        <div class="contact">
-            <a href="https://www.linkedin.com/in/kaiquerios/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kaiquerios.dev@gmail.com" target="_blank"><i
-                    class="far fa-envelope"></i></a>
+    <section class="about">
+        <h2>Sobre Mim</h2>
+        <p>Sou técnico em Desenvolvimento de Sistemas e estudante de Engenharia de Software, apaixonado por tecnologia e inovação. Tenho experiência acadêmica sólida em desenvolvimento de software, com foco em automação e inteligência artificial. Estou em busca de desafios e oportunidades para aplicar meus conhecimentos e contribuir com soluções eficientes.</p>
+    </section>
 
-            <a href="https://github.com/kaiquerios" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-
-        <div class="section">
-            <h2>Sobre Mim</h2>
-            <p>Técnico em Desenvolvimento de Sistemas e Estudante de Engenharia de Software em busca de oportunidades na
-                área de tecnologia. Estudos focados em Automação e Inteligência Artificial. Experiências acadêmicas
-                significativas em desenvolvimento de software.
-            </p>
-        </div>
-
-        <div class="projects-container">
-            <h2>Projetos</h2>
-            <div class="projects slick-carousel">
-
-                <div class="project">
-                    <div class="project-content">
-                        <img src="./pics/background_project.jpg" alt="">
-                        <div class="project-details">
-                            <h3>Em construção</h3>
-                            <p>Descrição do Projeto.</p>
-                            <a class="nextui-button" href="#" target="_blank">Ver Projeto</a>
-                        </div> 
-                    </div>
+    <section class="projects-container">
+        <h2>Projetos</h2>
+        <div class="projects slick-carousel">
+            <div class="project">
+                <img src="./pics/background_project.jpg" alt="Projeto">
+                <div class="project-details">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto...</p>
+                    <a class="btn" href="#" target="_blank">Ver Projeto</a>
                 </div>
-
-                <div class="project">
-                    <div class="project-content">
-                        <img src="./pics/background_project.jpg" alt="">
-                        <div class="project-details">
-                            <h3>Em construção</h3>
-                            <p>Descrição do Projeto.</p>
-                            <a class="nextui-button" href="#" target="_blank">Ver Projeto</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="project-content">
-                        <img src="./pics/background_project.jpg" alt="">
-                        <div class="project-details">
-                            <h3>Em construção</h3>
-                            <p>Descrição do Projeto.</p>
-                            <a class="nextui-button" href="#" target="_blank">Ver Projeto</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="project-content">
-                        <img src="./pics/background_project.jpg" alt="">
-                        <div class="project-details">
-                            <h3>Em construção</h3>
-                            <p>Descrição do Projeto.</p>
-                            <a class="nextui-button" href="#" target="_blank">Ver Projeto</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
-
-        <div id="skillsModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-
-                <div class="skills-container">
-                    <h2>Soft Skills</h2>
-                    <div class="skills-table">
-                        <div class="skill soft-skill">
-                            <i class="fas fa-bolt"></i>
-                            <p>Adaptabilidade</p>
-                        </div>
-                        <div class="skill soft-skill">
-                            <i class="fas fa-bullhorn"></i>
-                            <p>Proatividade</p>
-                        </div>
-                        <div class="skill soft-skill">
-                            <i class="fas fa-comments"></i>
-                            <p>Comunicação Efetiva</p>
-                        </div>
-                        <div class="skill soft-skill">
-                            <i class="fas fa-chart-line"></i>
-                            <p>Capacidade Analítica</p>
-                        </div>
-                        <div class="skill soft-skill">
-                            <i class="fas fa-clipboard-list"></i>
-                            <p>Senso de Organização</p>
-                        </div>
-                        <div class="skill soft-skill">
-                            <i class="fas fa-users"></i>
-                            <p>Trabalho em Equipe</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-container">
-                    <h2>Hard Skills</h2>
-                    <div class="skills-table">
-                        <div class="skill hard-skill">
-                            <i class="fab fa-python"></i>
-                            <p>Python</p>
-                        </div>
-                        <div class="skill hard-skill">
-                            <i class="fas fa-code"></i>
-                            <p>C++</p>
-                        </div>
-                        <div class="skill hard-skill">
-                            <i class="fas fa-database"></i>
-                            <p>Bancos de Dados</p>
-                        </div>
-                        <div class="skill hard-skill">
-                            <i class="fas fa-tools"></i>
-                            <p>Frameworks e Bibliotecas</p>
-                        </div>
-                        <div class="skill hard-skill">
-                            <i class="fas fa-robot"></i>
-                            <p>Automação e Inteligência Artificial</p>
-                        </div>
-                        <div class="skill hard-skill">
-                            <i class="fas fa-tasks"></i>
-                            <p>Metodologias Ágeis</p>
-                        </div>
-                    </div>
+            <div class="project">
+                <img src="./pics/background_project.jpg" alt="Projeto">
+                <div class="project-details">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto...</p>
+                    <a class="btn" href="#" target="_blank">Ver Projeto</a>
                 </div>
             </div>
         </div>
+    </section>
 
+    <div id="skillsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Adaptabilidade</li>
+                    <li>Proatividade</li>
+                    <li>Comunicação Efetiva</li>
+                    <li>Capacidade Analítica</li>
+                    <li>Senso de Organização</li>
+                    <li>Trabalho em Equipe</li>
+                </ul>
+                <h3>Hard Skills</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>Bancos de Dados</li>
+                    <li>Automação e IA</li>
+                    <li>Metodologias Ágeis</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="script.js"></script>
-
 </body>
-
 </html>
